@@ -2,18 +2,30 @@
 
 A simple Next.js app that displays a personalized welcome message. Perfect for testing Vercel deployments!
 
-## 🚀 One-Click Deploy
+## 🚀 Deploy to Vercel
 
-Click the button below to fork this repo and deploy your own instance to Vercel:
+**Note: This is a private repository. You must be added as a collaborator to access it.**
+
+### For Collaborators - How to Deploy:
+
+1. **Fork this repository**
+   - Click the "Fork" button at the top right
+   - This creates a copy in your GitHub account
+
+2. **Deploy from your fork**
+   - Go to your forked repository
+   - Click the "Deploy to Vercel" button below
+   - Sign in with your own Vercel account (free plan works!)
+   - Enter your name when prompted for `NEXT_PUBLIC_USERNAME`
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/tajrian/vercel-demo&env=NEXT_PUBLIC_USERNAME&envDescription=Enter%20your%20name%20to%20display%20on%20the%20landing%20page&envLink=https://github.com/tajrian/vercel-demo&project-name=my-opti-dam&repo-name=my-opti-dam)
 
-### What happens when you click deploy:
+### What happens when you deploy:
 
-1. **Fork the repository** - Creates a copy in your GitHub account
+1. **Clone to your Vercel** - Vercel clones your fork to your account
 2. **Set your username** - You'll be prompted to enter a username to display
-3. **Deploy to Vercel** - Automatically builds and deploys your app
-4. **Get your URL** - Receive a live URL to share!
+3. **Build and deploy** - Automatically builds and deploys your app
+4. **Get your URL** - Receive a live URL on your own Vercel account!
 
 ## 🛠️ Manual Setup
 
