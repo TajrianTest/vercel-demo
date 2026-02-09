@@ -6,7 +6,7 @@ A simple Next.js app that displays a personalized welcome message. Perfect for t
 
 Click the button below to fork this repo and deploy your own instance to Vercel:
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/YOUR_GITHUB_USERNAME/vercel-demo&env=NEXT_PUBLIC_USERNAME&envDescription=Enter%20your%20name%20to%20display%20on%20the%20landing%20page&envLink=https://github.com/YOUR_GITHUB_USERNAME/vercel-demo&project-name=my-opti-dam&repo-name=my-opti-dam)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/tajrian/vercel-demo&env=NEXT_PUBLIC_USERNAME&envDescription=Enter%20your%20name%20to%20display%20on%20the%20landing%20page&envLink=https://github.com/tajrian/vercel-demo&project-name=my-opti-dam&repo-name=my-opti-dam)
 
 ### What happens when you click deploy:
 
@@ -21,7 +21,7 @@ If you prefer to deploy manually:
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/YOUR_GITHUB_USERNAME/vercel-demo.git
+   git clone https://github.com/tajrian/vercel-demo.git
    cd vercel-demo
    ```
 
