@@ -1,36 +1,71 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Opti DAM - Deploy to Vercel Template
 
-## Getting Started
+A simple Next.js app that displays a personalized welcome message. Perfect for testing Vercel deployments!
 
-First, run the development server:
+## 🚀 One-Click Deploy
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Click the button below to fork this repo and deploy your own instance to Vercel:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/YOUR_GITHUB_USERNAME/vercel-demo&env=NEXT_PUBLIC_USERNAME&envDescription=Enter%20your%20name%20to%20display%20on%20the%20landing%20page&envLink=https://github.com/YOUR_GITHUB_USERNAME/vercel-demo&project-name=my-opti-dam&repo-name=my-opti-dam)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### What happens when you click deploy:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. **Fork the repository** - Creates a copy in your GitHub account
+2. **Set your username** - You'll be prompted to enter a username to display
+3. **Deploy to Vercel** - Automatically builds and deploys your app
+4. **Get your URL** - Receive a live URL to share!
 
-## Learn More
+## 🛠️ Manual Setup
 
-To learn more about Next.js, take a look at the following resources:
+If you prefer to deploy manually:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/YOUR_GITHUB_USERNAME/vercel-demo.git
+   cd vercel-demo
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
 
-## Deploy on Vercel
+3. **Set up environment variables**
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+   Create a `.env.local` file:
+   ```bash
+   NEXT_PUBLIC_USERNAME=YourNameHere
+   ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+4. **Run locally**
+   ```bash
+   npm run dev
+   ```
+
+   Open [http://localhost:3000](http://localhost:3000)
+
+5. **Deploy to Vercel**
+   ```bash
+   vercel
+   ```
+
+## 📝 Environment Variables
+
+| Variable | Description | Required |
+|----------|-------------|----------|
+| `NEXT_PUBLIC_USERNAME` | The name to display on the landing page | No (defaults to "Guest") |
+
+## 🎨 Customize
+
+Edit `app/page.tsx` to customize the landing page design and content.
+
+## 📦 Tech Stack
+
+- **Framework**: Next.js 16 (App Router)
+- **Styling**: Tailwind CSS
+- **Language**: TypeScript
+- **Deployment**: Vercel
+
+## 📄 License
+
+MIT License - Feel free to use this template for any project!
