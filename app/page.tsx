@@ -1,5 +1,10 @@
+'use client';
+
+import { useSearchParams } from 'next/navigation';
+
 export default function Home() {
-  const username = process.env.NEXT_PUBLIC_USERNAME || 'Guest';
+  const searchParams = useSearchParams();
+  const username = searchParams.get('username') || process.env.NEXT_PUBLIC_USERNAME || 'Guest';
 
   return (
     <div className="flex min-h-screen items-center justify-center bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-gray-900 dark:to-gray-800">
