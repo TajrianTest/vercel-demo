@@ -1,8 +1,9 @@
 'use client';
 
+import { Suspense } from 'react';
 import { useSearchParams } from 'next/navigation';
 
-export default function Home() {
+function HomeContent() {
   const searchParams = useSearchParams();
   const username = searchParams.get('username') || process.env.NEXT_PUBLIC_USERNAME || 'Guest';
 
@@ -17,5 +18,21 @@ export default function Home() {
         </p>
       </main>
     </div>
+  );
+}
+
+export default function Home() {
+  return (
+    <Suspense fallback={
+      <div className="flex min-h-screen items-center justify-center bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-gray-900 dark:to-gray-800">
+        <main className="text-center px-8">
+          <h1 className="text-5xl md:text-7xl font-bold text-gray-900 dark:text-white mb-6">
+            Loading...
+          </h1>
+        </main>
+      </div>
+    }>
+      <HomeContent />
+    </Suspense>
   );
 }
